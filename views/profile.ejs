@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>21 Savage Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/870f6220a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <% if(notes[0] === undefined){notes[0] = {} }%>
+  <% if(notes[0].notesList === undefined){ notes[0]['notesList'] = " " }%>
+  <% if(notes[0].notesList[0] === undefined){notes[0].notesList[0] = "" }%>
+<div class="container">
+  <form action="/update" method="post">
+    <div class="notesHeader">
+      Your Notes
+      <span id="addBtn"><i class="fa-solid fa-plus" ></i></span>
+    </div>
+    <div class="notepadList">
+      <% console.log(Object.keys(notes[0].notesList).length) %>
+      <% for(let i = 0; i < Object.keys(notes[0].notesList).length ; i++) {%>
+      <div class="notes">
+        <textarea name="<%= i%>" id="" cols="30" rows="10">
+            <%= notes[0].notesList[i]%>
+        </textarea>
+        <span class="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+      <% }%>
+    </div> 
+    <button type="submit" class="updateBtn">Update</button>
+  </form>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>

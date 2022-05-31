@@ -1,0 +1,14 @@
+* {
+  font-family: 'open sans';
+  font-size: 20px;
+}
+
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url(img/notebg.jpg);
+}
+
+img{
+  height: 300px;
+}
