@@ -1,13 +1,15 @@
-## Installation
+# fullstack1
 
-1. Clone repo
-2. run `npm install`
+# Notes App
 
-## Usage
+Users are able to login and write note entries in their profile. They are able to update entries and delete entries as needed. Very simple notes app to keeping your thoughts/to-do lists organized. 
 
-1. run `node server.js`
-2. Navigate to `localhost:8080`
+![image](https://user-images.githubusercontent.com/102040536/172030407-62697cd3-9a1d-487c-bc40-7714f9accc1b.png)
 
-## Credit
+## How It's Made:
 
-Modified from Scotch.io's auth tutorial
+Languages/frameworks use: HTML, CSS, JavaScript, Node.js, MongoDB, Express
+
+## Thoughts:
+
+It was a little bit similar to Savage Auth, but needed a good amount of tweaking to make things appear like notes. There were some issues at the beginning with adding a new notes and having it stay (targeting the right things can be tricky!). Lots of trial and error.
